@@ -223,9 +223,10 @@
   }
 
   .footer-container {
-    padding-left: 15px;
     column-gap: 0;
     row-gap: 0;
+    align-items: baseline;
+    flex-wrap: nowrap;
   }
 
   .footer-info {
@@ -233,10 +234,11 @@
   }
 
   .footer-social {
-    margin-right: 80px;
+    margin-right: 0;
   }
 
   .footer-subscribe {
+    margin-left: auto;
     width: auto;
   }
 }

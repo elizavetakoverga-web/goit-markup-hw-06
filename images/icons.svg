@@ -106,5 +106,15 @@
 <symbol id="send" viewBox="0 0 24 24" fill="none">
     <path fill="currentColor" d="M24 2 0 13.25l7.6699 2.3672L19.5 6.375 10.5017 16.4913l73e-4 23e-4-9e-3-23e-4V22l4.3013-4.1817 5.4488 1.6817z" />
 </symbol>
-    </defs>
+   
+    <symbol id="icon-burger" viewBox="0 0 24 24">
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"
+      fill="currentColor"
+    />
+  </symbol>
+  </defs>
 </svg>
+ 
