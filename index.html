@@ -55,13 +55,48 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-open-btn"
+          type="button"
+          aria-label="Open menu"
+          data-menu-open
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.60001 6C3.60001 5.68174 3.72643 5.37652 3.95148 5.15148C4.17652 4.92643 4.48175 4.8 4.80001 4.8H19.2C19.5183 4.8 19.8235 4.92643 20.0485 5.15148C20.2736 5.37652 20.4 5.68174 20.4 6C20.4 6.31826 20.2736 6.62349 20.0485 6.84853C19.8235 7.07357 19.5183 7.2 19.2 7.2H4.80001C4.48175 7.2 4.17652 7.07357 3.95148 6.84853C3.72643 6.62349 3.60001 6.31826 3.60001 6Z"
+              fill="#2E2F42"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.60001 12C3.60001 11.6817 3.72643 11.3765 3.95148 11.1515C4.17652 10.9264 4.48175 10.8 4.80001 10.8H19.2C19.5183 10.8 19.8235 10.9264 20.0485 11.1515C20.2736 11.3765 20.4 11.6817 20.4 12C20.4 12.3183 20.2736 12.6235 20.0485 12.8485C19.8235 13.0736 19.5183 13.2 19.2 13.2H4.80001C4.48175 13.2 4.17652 13.0736 3.95148 12.8485C3.72643 12.6235 3.60001 12.3183 3.60001 12Z"
+              fill="#2E2F42"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.60001 18C3.60001 17.6817 3.72643 17.3765 3.95148 17.1515C4.17652 16.9264 4.48175 16.8 4.80001 16.8H19.2C19.5183 16.8 19.8235 16.9264 20.0485 17.1515C20.2736 17.3765 20.4 17.6817 20.4 18C20.4 18.3183 20.2736 18.6235 20.0485 18.8485C19.8235 19.0736 19.5183 19.2 19.2 19.2H4.80001C4.48175 19.2 4.17652 19.0736 3.95148 18.8485C3.72643 18.6235 3.60001 18.3183 3.60001 18Z"
+              fill="#2E2F42"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section id="hero" class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section id="features" class="features">
@@ -524,9 +559,14 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" id="modal">
+    <div class="backdrop" id="modal" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" aria-label="Close modal">
+        <button
+          type="button"
+          class="modal-close-btn"
+          data-modal-close
+          aria-label="Close modal"
+        >
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#close"></use>
           </svg>
@@ -619,5 +659,159 @@
         </form>
       </div>
     </div>
+
+    <div id="mobile-menu" class="mobile-menu hide" data-menu>
+      <div class="container mobile-container">
+        <button
+          class="mobile-menu-close-btn"
+          type="button"
+          aria-label="Close menu"
+          data-menu-close
+        >
+          <svg
+            class="mobile-menu-close-icon"
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.805714L7.19429 8L8 7.19429L4.805714 4L8 0.805714Z"
+              fill="#2E2F42"
+            />
+          </svg>
+        </button>
+
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-nav-list">
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link current" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mobile-menu-nav-item">
+              <a class="mobile-menu-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-bottom">
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-address-list">
+              <li class="mobile-menu-address-item">
+                <a
+                  class="mobile-menu-address-link accent"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-address-item">
+                <a
+                  class="mobile-menu-address-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-social-list">
+            <li class="mobile-menu-social-item">
+              <a
+                class="mobile-menu-social-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <svg class="mobile-menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a
+                class="mobile-menu-social-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <svg class="mobile-menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a
+                class="mobile-menu-social-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <svg class="mobile-menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-social-item">
+              <a
+                class="mobile-menu-social-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <svg class="mobile-menu-social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      (() => {
+        const modalRefs = {
+          openModalBtn: document.querySelector("[data-modal-open]"),
+          closeModalBtn: document.querySelector("[data-modal-close]"),
+          modal: document.querySelector("[data-modal]"),
+        };
+
+        if (
+          modalRefs.openModalBtn &&
+          modalRefs.closeModalBtn &&
+          modalRefs.modal
+        ) {
+          modalRefs.openModalBtn.addEventListener("click", () => {
+            modalRefs.modal.classList.add("is-open");
+          });
+          modalRefs.closeModalBtn.addEventListener("click", () => {
+            modalRefs.modal.classList.remove("is-open");
+          });
+        }
+
+        const openMenuBtn = document.querySelector("[data-menu-open]");
+        const closeMenuBtn = document.querySelector("[data-menu-close]");
+        const menu = document.querySelector("[data-menu]");
+
+        if (openMenuBtn && closeMenuBtn && menu) {
+          openMenuBtn.addEventListener("click", () => {
+            menu.classList.remove("hide");
+          });
+          closeMenuBtn.addEventListener("click", () => {
+            menu.classList.add("hide");
+          });
+        }
+      })();
+    </script>
   </body>
 </html>
